@@ -1,7 +1,7 @@
 ---
 # This playbook prints a simple debug message
 - name: Echo 
-  hosts: back-end-servers
+  hosts: "{{class}}"
 
   tasks:
   - name: Print debug message
