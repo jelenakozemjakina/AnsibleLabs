@@ -1,0 +1,9 @@
+---
+# This playbook prints a simple debug message
+- name: Echo 
+  hosts: back-end-servers
+
+  tasks:
+  - name: Print debug message
+    debug:
+      msg: "{{text}}"
